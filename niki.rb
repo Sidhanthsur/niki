@@ -93,8 +93,7 @@ else
 #This is for any parseable recognized by chronic
 
 File.open('output.txt', 'a') { |file| file.write("\ntStamp\t\t") }
-puts 'its a timestamp'
-  puts Chronic.parse(text_to_process)
+
     File.open('output.txt', 'a') { |file| file.write(Chronic.parse(text_to_process)) }
 
 end
